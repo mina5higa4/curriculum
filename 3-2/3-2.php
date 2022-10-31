@@ -6,13 +6,13 @@
 /* 3-2 （３章練習問題１） */
 
 /* フルーツの単価と個数はランダムに決める */
-$price_apple = rand(1, 10) * 50 ;
-$price_orange = rand(1, 10) * 50 ;
-$price_peach = rand(1, 10) * 50 ;
+$price_apple = mt_rand(1, 10) * 50 ;
+$price_orange = mt_rand(1, 10) * 50 ;
+$price_peach = mt_rand(1, 10) * 50 ;
 
-$cnt_apple = rand(1, 10) ;
-$cnt_orange = rand(1, 10) ;
-$cnt_peach = rand(1, 10) ;
+$cnt_apple = mt_rand(1, 10) ;
+$cnt_orange = mt_rand(1, 10) ;
+$cnt_peach = mt_rand(1, 10) ;
 
 /* 連想配列に格納 */
 $fruits = [
