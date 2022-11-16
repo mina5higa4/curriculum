@@ -52,11 +52,11 @@ table {
     background-color: black;
     position: absolute;
     left: 0;
-    transition: all 2s ease;
+    transition: all 3s ease-in;
 }
 .left.action{
     width: 0;
-    transition: all 2s ease;
+    transition: all 3s ease-in;
 }
 .right{
     width: 50%;
@@ -64,11 +64,11 @@ table {
     background-color: black;
     position: absolute;
     right: 0;
-    transition: all 2s ease;
+    transition: all 3s ease-in;
 }
 .right.action{
     width: 0;
-    transition: all 2s ease;
+    transition: all 3s ease-in;
 }
 .click{
     position: absolute;
