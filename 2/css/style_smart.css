@@ -82,30 +82,6 @@
     margin-bottom: 20px;
 }
 
-.r_2{
-    position: absolute;
-    left: 30px;
-    top: 80px;
-    width: 130px;
-    height: 40px;
-    background-color: #ff863f;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #ffffff;
-}
-
-.r_3{
-    position: absolute;
-    left: 30px;
-    top: 140px;
-    width: 130px;
-    height: 40px;
-    background-color: #ff863f;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #ffffff;
-}
-
 .footer{
     width: 200px;
     height: 100px;
