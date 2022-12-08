@@ -1,0 +1,19 @@
+body {
+    background-color: #aaaaaa;
+    color: #ffffff;
+    text-align: center ;
+}
+
+h1{
+    border-bottom: 0.5px solid #d6d6d6;
+}
+
+.hoo{
+    width: fit-content ;
+    margin: auto;
+    color: #ffffff;
+}
+
+label{
+    color: #ffffff;
+}
