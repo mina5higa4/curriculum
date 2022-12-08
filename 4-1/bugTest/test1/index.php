@@ -45,8 +45,7 @@ function getName($list) {
 //配列の中の名前を出す。
     foreach ($list as $key => $member) {
         if ($i < count($list)) {
-//            echo $key[0] . '<br>';
-            echo $key . '<br>';
+            echo $key . '<br>';     // 2022.12.08 higashi
         }
         $i++;
     }
@@ -55,8 +54,7 @@ function getName($list) {
 getName($list);
 echo '<br>';
 // 大阪出身の方を表示
-//getPeople();
-getPeople($list);
+getPeople($list);        // 2022.12.08 higashi
 
 // 大阪出身の方を抽出
 function getPeople($list) {
