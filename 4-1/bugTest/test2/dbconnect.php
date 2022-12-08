@@ -8,4 +8,4 @@ $db['user'] = "root";
 // ユーザー名のパスワード
 $db['pass'] = "";
 // データベース名
-$db['dbname'] = "YIGroupBlog";
+$db['dbname'] = "YIGroupBlog";  // 2022.12.08 higashi
