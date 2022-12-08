@@ -1,15 +1,15 @@
 <?php
-//require 'lib/password.php';
+//require 'lib/password.php';  // 2022.12.08 higashi
 // セッション開始
-//session_start();
-require_once('dbconnect.php');
+//session_start();  // 2022.12.08 higashi
+require_once('dbconnect.php');  // 2022.12.08 higashi
 
 // エラーメッセージ、登録完了メッセージの初期化
 $errorMessage = "";
 $signUpMessage = "";
 
 // セッション開始
-//session_start();
+//session_start();  // 2022.12.08 higashi
 
 // ログインボタンが押された場合
 if (isset($_POST["signUp"])) {
@@ -34,7 +34,7 @@ if (isset($_POST["signUp"])) {
         try {
             $pdo = new PDO($dsn, $db['user'], $db['pass'], array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-            $stmt = $pdo->prepare("INSERT INTO users(name, password) VALUES (?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO users(name, password) VALUES (?, ?)");  // 2022.12.08 higashi
 
             $stmt->execute(array($username, password_hash($password, PASSWORD_DEFAULT)));  // パスワードのハッシュ化を行う（今回は文字列のみなのでbindValue(変数の内容が変わらない)を使用せず、直接excuteに渡しても問題ない）
             $userid = $pdo->lastinsertid();  // 登録した(DB側でauto_incrementした)IDを$useridに入れる
