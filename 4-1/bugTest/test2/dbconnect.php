@@ -9,3 +9,4 @@ $db['user'] = "root";
 $db['pass'] = "";
 // データベース名
 $db['dbname'] = "YIGroupBlog";  // 2022.12.08 higashi
+?>
