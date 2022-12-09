@@ -47,7 +47,15 @@ $post_data = $data_db->getPostData()->fetchAll(PDO::FETCH_ASSOC);
                 for( $i=0; $i<count($post_data); $i++){
                     $tmpbuf .= "<tr>";
                     foreach( $post_data[$i] as $key => $value ){
-                        $tmpbuf .= "<td>$value</td>";
+                        if( $key === 'category_no'){
+                            $cidx = "";
+                            if( $value == 1 ||  $value == 2 ){
+                                $cidx = $value;
+                            }
+                            $tmpbuf .= sprintf("<td>%s</td>", $category_name[$cidx]);
+                        }else{
+                            $tmpbuf .= "<td>$value</td>";
+                        }
                     }
                     $tmpbuf .= "</tr>\n";
                 }
