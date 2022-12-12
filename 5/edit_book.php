@@ -56,7 +56,7 @@ switch($gamen_mode){
         <input type="text" name="title" id="title" style="width:200px;height:50px;" value="<?php echo $pdata['title'];?>">
         <br>
         発売日:<br>
-        <input type="date" name="date" id="date" style="width:200px;height:100px;" value="<?php echo $pdata['date'];?>"><br>
+        <input type="date" name="date" value="<?php echo $pdata['date'];?>"><br>
         <br>
         在庫数:<br>
         <select name="stock">
