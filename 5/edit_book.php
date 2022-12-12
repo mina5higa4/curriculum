@@ -53,7 +53,7 @@ switch($gamen_mode){
 <form method="POST" action="edit_done_book.php">
     <input type="hidden" name="book_id" value="<?php echo $book_id;?>">
         タイトル<br>
-        <input type="text" name="title" id="title" style="width:200px;height:50px;" value="<?php echo $pdata['title'];?>">
+        <input type="text" name="title" id="title" style="width:200px" value="<?php echo $pdata['title'];?>">
         <br>
         発売日:<br>
         <input type="date" name="date" value="<?php echo $pdata['date'];?>"><br>
